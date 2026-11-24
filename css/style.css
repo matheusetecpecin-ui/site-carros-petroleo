@@ -1,0 +1,44 @@
+/* ==========================================================================
+   ESTILOS PERSONALIZADOS (COMPLEMENTARES AO BOOTSTRAP 5.3)
+   Este arquivo ajusta detalhes visuais sem sobrescrever o grid do Bootstrap.
+   ========================================================================== */
+
+html {
+  scroll-behavior: smooth; /* Rolagem suave ao clicar nos links do menu */
+}
+
+/* Gradientes das seções principais (Hero) */
+.hero-carros {
+  background: linear-gradient(125deg, #0f172a 0%, #1e293b 55%, #7f1d1d 100%);
+}
+
+.hero-petroleo {
+  background: linear-gradient(135deg, #090d16 0%, #1c1917 55%, #78350f 100%);
+}
+
+/* Ajuste das imagens do carrossel e dos cards */
+.carousel-banner {
+  height: 440px;
+  object-fit: cover;
+}
+
+.card-banner {
+  height: 190px;
+  object-fit: cover;
+}
+
+/* Efeito sutil de elevação nos cards */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .carousel-banner {
+    height: 280px;
+  }
+}

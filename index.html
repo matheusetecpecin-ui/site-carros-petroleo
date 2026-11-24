@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoMaster | Landing Page Explicativa — Tudo Sobre Carros</title>
+
+  <!-- Bootstrap 5.3 CSS + Ícones via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- CSS Personalizado do Projeto -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
+
+  <!-- =====================================================================
+       1. BARRA DE AVISO SUPERIOR (ALERTA DE NAVEGAÇÃO ENTRE PÁGINAS)
+       ===================================================================== -->
+  <div class="alert alert-dark rounded-0 mb-0 py-2 text-center border-0 border-bottom border-secondary">
+    <small>
+      <span class="badge text-bg-danger me-2">PORTAL INTEGRADO</span>
+      Quer entender de onde vêm a gasolina, o diesel e os lubrificantes dos carros?
+      <a href="petroleo.html" class="link-warning fw-bold text-decoration-none ms-1">
+        Acessar Landing Page de Petróleo →
+      </a>
+    </small>
+  </div>
+
+  <!-- =====================================================================
+       2. NAVBAR RESPONSIVA (COMPONENTE NAVBAR DO BOOTSTRAP)
+       ===================================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <i class="bi bi-car-front-fill text-danger fs-4 me-2"></i>AutoMaster
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCarros">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navCarros">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#introducao">Visão Geral</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categorias">Categorias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#funcionamento">Como Funciona</a></li>
+          <li class="nav-item"><a class="nav-link" href="#comparativo">Comparativo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#manutencao">Manutenção</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Guia & Contato</a></li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <!-- Botão que abre o Offcanvas (Menu Lateral Explicativo) -->
+          <button class="btn btn-outline-light btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasIndice">
+            <i class="bi bi-book me-1"></i>Índice Didático
+          </button>
+          <!-- Botão que leva para a segunda Landing Page -->
+          <a href="petroleo.html" class="btn btn-warning btn-sm fw-bold text-dark">
+            <i class="bi bi-droplet-fill me-1"></i>Página Petróleo
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =====================================================================
+       3. OFFCANVAS (PAINEL LATERAL COM SUMÁRIO EXPLICATIVO)
+       ===================================================================== -->
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasIndice">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title"><i class="bi bi-journal-text text-danger me-2"></i>Guia de Estudo</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="small text-secondary">Navegue passo a passo pelos conceitos fundamentais do universo automotivo:</p>
+      <div class="list-group list-group-flush mb-4">
+        <a href="#categorias" class="list-group-item list-group-item-action bg-dark text-white">
+          <strong>1. Tipos de Carroceria:</strong> Hatch, Sedã, SUV e Esportivo
+        </a>
+        <a href="#funcionamento" class="list-group-item list-group-item-action bg-dark text-white">
+          <strong>2. Mecânica & Sistemas:</strong> Motor 4 tempos, Câmbio e Freios
+        </a>
+        <a href="#comparativo" class="list-group-item list-group-item-action bg-dark text-white">
+          <strong>3. Matriz Energética:</strong> Combustão, Híbrido e Elétrico
+        </a>
+        <a href="#manutencao" class="list-group-item list-group-item-action bg-dark text-white">
+          <strong>4. Manutenção Preventiva:</strong> Óleo, Pneus e Revisões
+        </a>
+      </div>
+      <div class="p-3 rounded bg-black border border-warning">
+        <h6 class="text-warning mb-1">Conexão com Energia</h6>
+        <p class="small text-secondary mb-2">Entenda como o petróleo bruto vira combustível automotivo.</p>
+        <a href="petroleo.html" class="btn btn-warning btn-sm w-100 fw-bold text-dark">Abrir Landing Page Petróleo →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       4. HERO SECTION (APRESENTAÇÃO PRINCIPAL + INDICADORES)
+       ===================================================================== -->
+  <header id="introducao" class="hero-carros text-white py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="badge rounded-pill text-bg-danger px-3 py-2 mb-3">
+            GUIA COMPLETO & EXPLICATIVO • BOOTSTRAP 5
+          </span>
+          <h1 class="display-4 fw-bold mb-3">Tudo Sobre Carros: Como Funcionam, Tipos e Tecnologias</h1>
+          <p class="lead text-light opacity-75 mb-4">
+            Um guia claro e estruturado para você compreender a engenharia por trás dos automóveis — desde a queima do combustível no cilindro até os sistemas eletrônicos de segurança e mobilidade elétrica.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#funcionamento" class="btn btn-danger btn-lg px-4 fw-semibold">
+              Explorar Engenharia
+            </a>
+            <button class="btn btn-outline-light btn-lg px-4" data-bs-toggle="modal" data-bs-target="#modalConsumo">
+              <i class="bi bi-calculator me-1"></i>Calcular Consumo (km/l)
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card bg-dark text-white border-secondary shadow-lg rounded-4">
+            <div class="card-header border-secondary fw-semibold">
+              <i class="bi bi-diagram-3 text-danger me-2"></i>Anatomia Básica de um Automóvel
+            </div>
+            <div class="card-body p-4">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-light border-secondary px-0">
+                  <strong class="text-danger">1. Trem de Força (Powertrain):</strong> Motor, transmissão e eixos que geram e levam força às rodas.
+                </li>
+                <li class="list-group-item bg-dark text-light border-secondary px-0">
+                  <strong class="text-warning">2. Chassi e Suspensão:</strong> Estrutura que absorve impactos e mantém os pneus em contato com o solo.
+                </li>
+                <li class="list-group-item bg-dark text-light border-secondary px-0">
+                  <strong class="text-info">3. Direção e Freios:</strong> Sistemas responsáveis pelo controle de trajetória e desaceleração segura.
+                </li>
+                <li class="list-group-item bg-dark text-light border-0 px-0 pb-0">
+                  <strong class="text-success">4. Eletrônica Embarcada:</strong> Central eletrônica (ECU), sensores, airbags e assistentes de condução.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       5. CARROSSEL VISUAL (IMAGENS LOCAIS DA PASTA IMG/)
+       ===================================================================== -->
+  <section class="container my-5">
+    <div id="carouselCarros" class="carousel slide rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselCarros" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselCarros" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselCarros" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/carro-esportivo.png" class="d-block w-100 carousel-banner" alt="Engenharia e Performance" />
+          <div class="carousel-caption bg-dark bg-opacity-75 rounded-3 p-3">
+            <h5>Engenharia & Alta Performance</h5>
+            <p class="mb-0 small">Aerodinâmica, centro de gravidade baixo e resposta imediata de aceleração.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/carro-suv.png" class="d-block w-100 carousel-banner" alt="SUVs e Tração 4x4" />
+          <div class="carousel-caption bg-dark bg-opacity-75 rounded-3 p-3">
+            <h5>SUVs, Picapes & Tração 4x4</h5>
+            <p class="mb-0 small">Robustez estrutural, maior altura do solo e versatilidade para viagens e terrenos irregulares.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/carro-eletrico.png" class="d-block w-100 carousel-banner" alt="Híbridos e Elétricos" />
+          <div class="carousel-caption bg-dark bg-opacity-75 rounded-3 p-3">
+            <h5>Híbridos & Elétricos</h5>
+            <p class="mb-0 small">Eficiência energética elevada, frenagem regenerativa e torque instantâneo.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCarros" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCarros" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       6. CATEGORIAS DE CARROS (CARDS + COLLAPSE EXPLICATIVO)
+       ===================================================================== -->
+  <section id="categorias" class="container py-4">
+    <div class="text-center mb-5">
+      <span class="badge text-bg-danger mb-2">CLASSIFICAÇÃO DE CARROCERIAS</span>
+      <h2 class="fw-bold">Principais Categorias de Automóveis</h2>
+      <p class="text-muted">Cada formato de carroceria atende a uma necessidade específica de espaço, consumo e dirigibilidade.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm card-hover">
+          <div class="card-body">
+            <span class="badge text-bg-secondary mb-2">Urbano</span>
+            <h5 class="card-title fw-bold">Hatchback</h5>
+            <p class="card-text text-muted small">Carroceria compacta de dois volumes (cofre do motor e cabine integrada ao porta-malas).</p>
+            <button class="btn btn-outline-dark btn-sm w-100" data-bs-toggle="collapse" data-bs-target="#infoHatch">
+              Explicação Técnica
+            </button>
+            <div class="collapse mt-3" id="infoHatch">
+              <div class="p-2 bg-light rounded small text-secondary">
+                <strong>Vantagem:</strong> Menor peso e comprimento facilitam balizas e reduzem o consumo na cidade.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm card-hover">
+          <div class="card-body">
+            <span class="badge text-bg-primary mb-2">Estrada & Família</span>
+            <h5 class="card-title fw-bold">Sedã (Sedan)</h5>
+            <p class="card-text text-muted small">Três volumes bem definidos: motor, cabine de passageiros e porta-malas separado.</p>
+            <button class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="collapse" data-bs-target="#infoSeda">
+              Explicação Técnica
+            </button>
+            <div class="collapse mt-3" id="infoSeda">
+              <div class="p-2 bg-light rounded small text-secondary">
+                <strong>Vantagem:</strong> Melhor coeficiente aerodinâmico e isolamento acústico do bagageiro.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm card-hover">
+          <div class="card-body">
+            <span class="badge text-bg-success mb-2">Versatilidade</span>
+            <h5 class="card-title fw-bold">SUV & Crossover</h5>
+            <p class="card-text text-muted small">Utilitário esportivo com suspensão elevada, amplo espaço interno e posição alta ao dirigir.</p>
+            <button class="btn btn-outline-success btn-sm w-100" data-bs-toggle="collapse" data-bs-target="#infoSuv">
+              Explicação Técnica
+            </button>
+            <div class="collapse mt-3" id="infoSuv">
+              <div class="p-2 bg-light rounded small text-secondary">
+                <strong>Vantagem:</strong> Ângulos de entrada e saída maiores protegem o assoalho em valetas e estradas de terra.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm card-hover">
+          <div class="card-body">
+            <span class="badge text-bg-danger mb-2">Desempenho</span>
+            <h5 class="card-title fw-bold">Esportivo & Cupê</h5>
+            <p class="card-text text-muted small">Projetado para máxima aderência em curvas, frenagem intensa e relação peso-potência otimizada.</p>
+            <button class="btn btn-outline-danger btn-sm w-100" data-bs-toggle="collapse" data-bs-target="#infoSport">
+              Explicação Técnica
+            </button>
+            <div class="collapse mt-3" id="infoSport">
+              <div class="p-2 bg-light rounded small text-secondary">
+                <strong>Vantagem:</strong> Suspensão mais firme e pneus largos reduzem a rolagem da carroceria em curvas.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7. COMO FUNCIONA UM CARRO (ABAS INTERATIVAS / NAV PILLS)
+       ===================================================================== -->
+  <section id="funcionamento" class="container py-5">
+    <div class="card border-0 shadow rounded-4 p-4 p-md-5 bg-white">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+        <div>
+          <span class="badge text-bg-dark mb-2">ENGENHARIA EXPLICADA</span>
+          <h2 class="fw-bold mb-0">Como Funciona Cada Sistema do Carro</h2>
+        </div>
+        <span class="badge text-bg-info text-dark" data-bs-toggle="tooltip" title="Clique nas abas abaixo para alternar os temas">
+          <i class="bi bi-info-circle me-1"></i>Interativo
+        </span>
+      </div>
+
+      <ul class="nav nav-pills mb-4" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab-motor">1. Motor 4 Tempos</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-cambio">2. Transmissão & Câmbio</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-seguranca">3. Freios & Segurança</button>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab-motor">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h5 class="fw-bold text-danger">Os 4 Ciclos da Combustão Interna</h5>
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Admissão:</strong> O pistão desce e aspira a mistura de ar e combustível para dentro do cilindro.</li>
+                <li class="list-group-item"><strong>Compressão:</strong> O pistão sobe, comprimindo a mistura para aumentar sua energia potencial.</li>
+                <li class="list-group-item"><strong>Combustão (Explosão):</strong> A vela emite uma faísca (ciclo Otto) ou o calor comprime o diesel, empurrando o pistão para baixo.</li>
+                <li class="list-group-item"><strong>Escape:</strong> A válvula de saída abre e os gases queimados são expulsos pelo escapamento.</li>
+              </ol>
+            </div>
+            <div class="col-md-6">
+              <div class="p-4 bg-light rounded-4 h-100">
+                <h5 class="fw-bold">Potência (cv) vs. Torque (kgfm)</h5>
+                <p class="small text-secondary">
+                  <strong>Torque</strong> é a força de torção aplicada ao eixo: é ele que tira o carro da inércia nas arrancadas e ajuda em subidas.
+                </p>
+                <p class="small text-secondary mb-3">
+                  <strong>Potência</strong> é a velocidade com que esse trabalho é realizado, determinando a velocidade final e retomadas em altas rotações.
+                </p>
+                <div class="alert alert-secondary small mb-0">
+                  <strong>Dica:</strong> Motores Turbo entregam torque máximo em rotações mais baixas, deixando o carro ágil na cidade.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="tab-cambio">
+          <h5 class="fw-bold text-primary">Para que serve o Câmbio?</h5>
+          <p class="text-secondary">
+            O motor trabalha melhor dentro de uma faixa específica de rotações (RPM). O câmbio multiplica o torque nas marchas baixas (1ª e 2ª) para arrancar e reduz a rotação nas marchas altas (5ª e 6ª) para economizar combustível na estrada.
+          </p>
+          <div class="row g-3">
+            <div class="col-md-4"><div class="p-3 border rounded"><strong>Manual:</strong> Engrenagens selecionadas pelo motorista via embreagem.</div></div>
+            <div class="col-md-4"><div class="p-3 border rounded"><strong>Automático / CVT:</strong> Trocas automáticas por conversor de torque ou polias continuamente variáveis.</div></div>
+            <div class="col-md-4"><div class="p-3 border rounded"><strong>Dupla Embreagem (DCT):</strong> Duas embreagens deixam a próxima marcha pré-engatada para trocas instantâneas.</div></div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="tab-seguranca">
+          <h5 class="fw-bold text-success">Segurança Ativa vs. Segurança Passiva</h5>
+          <p class="text-secondary">
+            <strong>Segurança Ativa</strong> atua para <em>evitar</em> o acidente: freios ABS (impedem o travamento das rodas), controle eletrônico de estabilidade (ESC) e frenagem autônoma de emergência.
+          </p>
+          <p class="text-secondary mb-0">
+            <strong>Segurança Passiva</strong> protege os ocupantes <em>durante</em> uma colisão: carroceria com deformação programada, barras de proteção lateral, cintos com pré-tensionadores e airbags.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       8. TABELA COMPARATIVA DE PROPULSÃO
+       ===================================================================== -->
+  <section id="comparativo" class="container py-4">
+    <h2 class="fw-bold mb-3">Comparativo: Combustão, Híbrido e Elétrico</h2>
+    <div class="table-responsive shadow-sm rounded-4">
+      <table class="table table-hover table-bordered bg-white align-middle mb-0">
+        <thead class="table-dark">
+          <tr>
+            <th>Tipo de Propulsão</th>
+            <th>Fonte de Energia</th>
+            <th>Eficiência Energética</th>
+            <th>Principal Vantagem</th>
+            <th>Principal Desafio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Combustão Interna (Flex/Gasolina/Diesel)</strong></td>
+            <td>Derivados de petróleo e biocombustíveis</td>
+            <td>~25% a 35%</td>
+            <td>Abastecimento rápido (3 min) e ampla rede de postos</td>
+            <td>Perda de energia em forma de calor e emissões locais</td>
+          </tr>
+          <tr>
+            <td><strong>Híbrido (HEV / PHEV)</strong></td>
+            <td>Motor a combustão + motor elétrico e bateria</td>
+            <td>~40% a 50%</td>
+            <td>Recupera energia nas frenagens e reduz consumo urbano</td>
+            <td>Maior complexidade mecânica por reunir dois sistemas</td>
+          </tr>
+          <tr>
+            <td><strong>100% Elétrico (BEV)</strong></td>
+            <td>Bateria de íons de lítio recarregada na rede elétrica</td>
+            <td>~80% a 90%</td>
+            <td>Torque instantâneo, silêncio e zero emissão pelo escapamento</td>
+            <td>Tempo de recarga e infraestrutura em viagens longas</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       9. FAQ / MANUTENÇÃO PREVENTIVA (ACCORDION)
+       ===================================================================== -->
+  <section id="manutencao" class="container py-5">
+    <h2 class="fw-bold mb-3">Guia Rápido de Manutenção Preventiva (FAQ)</h2>
+    <div class="accordion shadow-sm" id="accordionManutencao">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item1">
+            1. Por que a troca de óleo e filtro é a manutenção mais importante?
+          </button>
+        </h2>
+        <div id="item1" class="accordion-collapse collapse show" data-bs-parent="#accordionManutencao">
+          <div class="accordion-body">
+            O óleo lubrificante cria uma película protetora entre peças metálicas que se movem milhares de vezes por minuto, evitando superaquecimento e desgaste prematuro. O filtro retém impurezas sólidas.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item2">
+            2. Como a calibragem dos pneus afeta segurança e consumo?
+          </button>
+        </h2>
+        <div id="item2" class="accordion-collapse collapse" data-bs-parent="#accordionManutencao">
+          <div class="accordion-body">
+            Pneus murchos aumentam a área de atrito com o asfalto, elevando o consumo de combustível, superaquecendo a borracha e prejudicando a estabilidade em curvas e frenagens.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item3">
+            3. Qual a ligação direta entre os carros e a indústria do petróleo?
+          </button>
+        </h2>
+        <div id="item3" class="accordion-collapse collapse" data-bs-parent="#accordionManutencao">
+          <div class="accordion-body">
+            Além da gasolina e do óleo diesel, o petróleo fornece a base para óleos lubrificantes, graxas, fluidos, plásticos do painel, espumas dos bancos e borracha sintética dos pneus. <a href="petroleo.html" class="fw-bold">Clique aqui para ver na Landing Page de Petróleo.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       10. SEÇÃO DE CAPTURA / RECEBER GUIA (FORMULÁRIO BOOTSTRAP)
+       ===================================================================== -->
+  <section id="contato" class="container pb-5">
+    <div class="card bg-dark text-white border-0 rounded-4 shadow-lg p-4 p-md-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="badge text-bg-danger mb-2">MATERIAL EDUCATIVO</span>
+          <h2 class="fw-bold">Receba o Checklist Completo de Manutenção e Mecânica</h2>
+          <p class="text-secondary mb-0">
+            Preencha o formulário ao lado para simular o envio do guia ilustrado com intervalos de revisão, tabela de fluidos e dicas de condução econômica.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <form id="leadCarros" class="row g-3">
+            <div class="col-md-6">
+              <div class="form-floating text-dark">
+                <input type="text" class="form-control" id="nomeLead" placeholder="Seu nome" required />
+                <label for="nomeLead">Seu Nome</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating text-dark">
+                <input type="email" class="form-control" id="emailLead" placeholder="seu@email.com" required />
+                <label for="emailLead">Seu E-mail</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-danger btn-lg w-100 fw-bold">
+                Receber Guia Explicativo
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       11. MODAL: CALCULADORA DE CONSUMO DE COMBUSTÍVEL
+       ===================================================================== -->
+  <div class="modal fade" id="modalConsumo" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title"><i class="bi bi-fuel-pump text-danger me-2"></i>Calculadora de Consumo Médio</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-muted">Informe a distância percorrida e a quantidade de litros abastecidos para descobrir o rendimento do veículo:</p>
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Distância percorrida (km)</label>
+            <input type="number" step="0.1" id="kmInput" class="form-control" placeholder="Ex: 360" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Combustível abastecido (litros)</label>
+            <input type="number" step="0.1" id="litrosInput" class="form-control" placeholder="Ex: 30" />
+          </div>
+          <button type="button" class="btn btn-danger w-100 fw-bold" onclick="calcularConsumo()">
+            Calcular Média (km/l)
+          </button>
+          <div id="resultadoConsumo" class="d-none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de Notificação -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toastCarros" class="toast text-bg-success border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body">
+          <i class="bi bi-check-circle-fill me-2"></i>Solicitação enviada! O guia automotivo foi encaminhado.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       12. RODAPÉ COM PAGINAÇÃO ENTRE AS DUAS LANDING PAGES
+       ===================================================================== -->
+  <footer class="bg-dark text-white py-4 border-top border-secondary">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <span class="small text-secondary">© 2026 AutoMaster — Landing Page Explicativa Sobre Carros (Bootstrap 5)</span>
+      <nav aria-label="Navegação entre páginas">
+        <ul class="pagination pagination-sm mb-0">
+          <li class="page-item active"><a class="page-link bg-danger border-danger" href="index.html">1. Tudo Sobre Carros</a></li>
+          <li class="page-item"><a class="page-link text-dark" href="petroleo.html">2. Tudo Sobre Petróleo →</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle + Script Personalizado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

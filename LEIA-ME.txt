@@ -1,0 +1,26 @@
+====================================================================
+PROJETO: PORTAL INTEGRADO — TUDO SOBRE CARROS & PETRÓLEO (BOOTSTRAP 5)
+====================================================================
+
+COMO EXECUTAR:
+1. Extraia a pasta 'site-carros-petroleo' para o seu computador.
+2. Abra o arquivo 'index.html' no navegador (Chrome, Edge, Firefox, etc.).
+3. Use os botões do menu superior ou o rodapé para navegar entre:
+   - index.html    -> Landing Page Explicativa: Tudo Sobre Carros
+   - petroleo.html -> Landing Page Explicativa: Tudo Sobre Petróleo
+
+ESTRUTURA DA PASTA:
+site-carros-petroleo/
+├── index.html      (Página principal sobre automóveis)
+├── petroleo.html   (Segunda landing page sobre petróleo e refino)
+├── LEIA-ME.txt     (Este guia rápido de uso)
+├── css/
+│   └── style.css   (Estilos personalizados comentados)
+├── js/
+│   └── app.js      (Scripts das calculadoras, toasts e tooltips)
+└── img/
+    ├── carro-esportivo.png
+    ├── carro-suv.png
+    ├── carro-eletrico.png
+    ├── petroleo-plataforma.png
+    └── petroleo-refinaria.png

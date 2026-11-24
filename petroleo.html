@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetroEnergy | Landing Page Explicativa — Tudo Sobre Petróleo</title>
+
+  <!-- Bootstrap 5.3 CSS + Ícones via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- CSS Personalizado do Projeto -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body class="bg-dark text-light">
+
+  <!-- =====================================================================
+       1. BARRA SUPERIOR DE INTEGRAÇÃO COM A PÁGINA DE CARROS
+       ===================================================================== -->
+  <div class="bg-warning text-dark text-center py-2 px-3 small fw-semibold">
+    Quer ver como os combustíveis e lubrificantes são usados nos motores?
+    <a href="index.html" class="text-dark text-decoration-underline fw-bold ms-1">
+      ← Voltar para Landing Page de Carros
+    </a>
+  </div>
+
+  <!-- =====================================================================
+       2. NAVBAR RESPONSIVA
+       ===================================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning" href="petroleo.html">
+        <i class="bi bi-droplet-fill me-2"></i>PetroEnergy
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPetroleo">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navPetroleo">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#origem">O que é Petróleo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cadeia">Cadeia Produtiva</a></li>
+          <li class="nav-item"><a class="nav-link" href="#refino">Destilação & Refino</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faqPetro">Dúvidas Técnicas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#estudo">Baixar Dossiê</a></li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-warning btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasGlossario">
+            <i class="bi bi-book me-1"></i>Glossário Técnico
+          </button>
+          <a href="index.html" class="btn btn-light btn-sm fw-bold">
+            <i class="bi bi-car-front-fill text-danger me-1"></i>Página Carros
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =====================================================================
+       3. OFFCANVAS (GLOSSÁRIO EXPLICATIVO DO SETOR PETROLÍFERO)
+       ===================================================================== -->
+  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasGlossario">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title text-warning"><i class="bi bi-journal-bookmark me-2"></i>Glossário do Petróleo</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="mb-3 pb-2 border-bottom border-secondary">
+        <h6 class="text-warning">Hidrocarbonetos</h6>
+        <p class="small text-secondary mb-0">Compostos químicos formados por átomos de carbono e hidrogênio, base energética do petróleo e do gás natural.</p>
+      </div>
+      <div class="mb-3 pb-2 border-bottom border-secondary">
+        <h6 class="text-warning">Barril de Petróleo (bbl)</h6>
+        <p class="small text-secondary mb-0">Unidade padrão de volume no mercado internacional, equivalente a 158,987 litros (ou 42 galões americanos).</p>
+      </div>
+      <div class="mb-3 pb-2 border-bottom border-secondary">
+        <h6 class="text-warning">Grau API</h6>
+        <p class="small text-secondary mb-0">Medida de densidade do óleo bruto. Óleos com API acima de 31° são considerados leves e rendem mais gasolina e diesel.</p>
+      </div>
+      <div class="mb-4">
+        <h6 class="text-warning">FPSO</h6>
+        <p class="small text-secondary mb-0">Navio-plataforma flutuante que produz, processa, armazena e transfere petróleo em águas profundas (como no Pré-Sal).</p>
+      </div>
+      <a href="index.html" class="btn btn-outline-light w-100">Ir para Landing Page de Carros</a>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       4. HERO SECTION EXPLICATIVA
+       ===================================================================== -->
+  <header id="origem" class="hero-petroleo py-5 border-bottom border-secondary">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="badge text-bg-warning text-dark px-3 py-2 mb-3 fw-bold">
+            GUIA DIDÁTICO • GEOLOGIA, REFINO & ENERGIA
+          </span>
+          <h1 class="display-4 fw-bold mb-3">Tudo Sobre Petróleo: Da Formação Geológica aos Derivados</h1>
+          <p class="lead text-light opacity-75 mb-4">
+            Entenda como a matéria orgânica soterrada há milhões de anos se transforma em óleo bruto, como ele é extraído em terra ou alto-mar e como as refinarias o separam em combustíveis e matérias-primas essenciais.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#refino" class="btn btn-warning btn-lg text-dark fw-bold px-4">
+              Ver Torre de Refino
+            </a>
+            <button class="btn btn-outline-light btn-lg px-4" data-bs-toggle="modal" data-bs-target="#modalBarril">
+              <i class="bi bi-arrow-left-right me-1"></i>Converter Barris em Litros
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card bg-black border-warning shadow-lg rounded-4 overflow-hidden">
+            <img src="img/petroleo-plataforma.png" class="card-banner w-100" alt="Exploração Offshore" />
+            <div class="card-body p-4">
+              <h5 class="text-warning fw-bold">Como o Petróleo se Forma?</h5>
+              <p class="small text-secondary mb-3">
+                Restos de plâncton e algas marinhas depositados no fundo de antigos oceanos foram cobertos por camadas de sedimentos. Sob alta pressão e temperatura (entre 60 °C e 150 °C) durante milhões de anos, transformaram-se em óleo e gás presos em rochas-reservatório porosas.
+              </p>
+              <span class="badge text-bg-secondary">Rocha Geradora → Migração → Rocha Reservatório → Rocha Selante</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       5. CADEIA PRODUTIVA EXPLICADA (UPSTREAM, MIDSTREAM, DOWNSTREAM)
+       ===================================================================== -->
+  <section id="cadeia" class="container py-5">
+    <div class="text-center mb-5">
+      <span class="badge text-bg-warning text-dark mb-2">ESTRUTURA DA INDÚSTRIA</span>
+      <h2 class="fw-bold">As 3 Etapas da Cadeia do Petróleo</h2>
+      <p class="text-secondary">A indústria petrolífera é dividida em três grandes segmentos operacionais:</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 bg-black text-light border-secondary shadow card-hover">
+          <div class="card-body p-4">
+            <span class="badge text-bg-warning text-dark mb-3">ETAPA 1 • EXPLORAÇÃO E PRODUÇÃO</span>
+            <h4 class="fw-bold">Upstream</h4>
+            <p class="text-secondary small">
+              Envolve estudos geológicos, mapeamento sísmico para localizar jazidas, perfuração de poços (em terra/onshore ou no mar/offshore) e bombeamento do petróleo bruto até a superfície.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 bg-black text-light border-secondary shadow card-hover">
+          <div class="card-body p-4">
+            <span class="badge text-bg-info text-dark mb-3">ETAPA 2 • TRANSPORTE E ARMAZENAGEM</span>
+            <h4 class="fw-bold">Midstream</h4>
+            <p class="text-secondary small">
+              Conecta os campos produtores às refinarias por meio de oleodutos, gasodutos, navios petroleiros de grande porte e terminais de tancagem monitorados 24 horas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 bg-black text-light border-secondary shadow card-hover">
+          <div class="card-body p-4">
+            <span class="badge text-bg-success mb-3">ETAPA 3 • REFINO E DISTRIBUIÇÃO</span>
+            <h4 class="fw-bold">Downstream</h4>
+            <p class="text-secondary small">
+              Processamento do óleo cru nas refinarias para produzir gasolina, óleo diesel, querosene de aviação (QAV), gás de cozinha (GLP), lubrificantes, nafta e asfalto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       6. DESTILAÇÃO FRACIONADA (COMO O REFINO FUNCIONA NA PRÁTICA)
+       ===================================================================== -->
+  <section id="refino" class="container py-4">
+    <div class="card bg-black border-secondary rounded-4 p-4 p-md-5">
+      <div class="row align-items-center g-4 mb-4">
+        <div class="col-lg-8">
+          <span class="badge text-bg-warning text-dark mb-2">PROCESSO DE REFINO</span>
+          <h2 class="fw-bold text-warning">Como Funciona a Destilação Fracionada</h2>
+          <p class="text-secondary mb-0">
+            O petróleo bruto é uma mistura de centenas de hidrocarbonetos diferentes. Na refinaria, ele é aquecido a cerca de <strong>370 °C</strong> e enviado para uma torre de destilação: moléculas mais leves sobem até o topo (onde é mais frio) e moléculas mais pesadas condensam na base.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <img src="img/petroleo-refinaria.png" class="img-fluid rounded-3 border border-secondary" alt="Torre de Refino" />
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-dark table-striped table-bordered align-middle mb-0">
+          <thead>
+            <tr>
+              <th>Fração / Derivado</th>
+              <th>Faixa de Ebulição</th>
+              <th>Características</th>
+              <th>Principais Usos no Dia a Dia</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-warning fw-bold">Gás de Refinaria & GLP</td>
+              <td>Abaixo de 40 °C</td>
+              <td>Moléculas muito leves (C1 a C4), gasosas à temperatura ambiente</td>
+              <td>Gás de cozinha (botijão), aquecimento e uso industrial</td>
+            </tr>
+            <tr>
+              <td class="text-warning fw-bold">Gasolina Automotiva</td>
+              <td>40 °C a 200 °C</td>
+              <td>Líquido volátil de alta densidade energética</td>
+              <td>Motores de ciclo Otto em carros de passeio (<a href="index.html" class="link-warning">ver página carros</a>)</td>
+            </tr>
+            <tr>
+              <td class="text-warning fw-bold">Nafta Petroquímica</td>
+              <td>40 °C a 150 °C</td>
+              <td>Insumo líquido enviado às centrais petroquímicas</td>
+              <td>Fabricação de plásticos, embalagens, tintas e borrachas</td>
+            </tr>
+            <tr>
+              <td class="text-warning fw-bold">Querosene de Aviação (QAV)</td>
+              <td>150 °C a 250 °C</td>
+              <td>Alta pureza e baixíssimo ponto de congelamento</td>
+              <td>Turbinas de aeronaves comerciais e executivas</td>
+            </tr>
+            <tr>
+              <td class="text-warning fw-bold">Óleo Diesel</td>
+              <td>250 °C a 350 °C</td>
+              <td>Mais denso e oleoso, ignição por compressão</td>
+              <td>Caminhões, ônibus, tratores, trens e geradores elétricos</td>
+            </tr>
+            <tr>
+              <td class="text-warning fw-bold">Lubrificantes, Parafinas & Asfalto</td>
+              <td>Acima de 350 °C (Vácuo)</td>
+              <td>Moléculas pesadas e viscosas do fundo da torre</td>
+              <td>Óleos de motor, velas, impermeabilizantes e pavimentação</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7. RENDIMENTO MÉDIO DE UM BARRIL (BARRAS DE PROGRESSO)
+       ===================================================================== -->
+  <section class="container py-5">
+    <h3 class="fw-bold mb-2">Rendimento Médio Típico por Barril Refinado</h3>
+    <p class="text-secondary small mb-4">Proporção aproximada de derivados obtidos após processos de destilação e conversão:</p>
+
+    <div class="mb-3">
+      <div class="d-flex justify-content-between small mb-1">
+        <span>Gasolina Automotiva</span><span>~42%</span>
+      </div>
+      <div class="progress bg-black border border-secondary" style="height: 18px;">
+        <div class="progress-bar bg-warning text-dark fw-bold" style="width: 42%;">42%</div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="d-flex justify-content-between small mb-1">
+        <span>Óleo Diesel e Óleos Combustíveis</span><span>~28%</span>
+      </div>
+      <div class="progress bg-black border border-secondary" style="height: 18px;">
+        <div class="progress-bar bg-info text-dark fw-bold" style="width: 28%;">28%</div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="d-flex justify-content-between small mb-1">
+        <span>Querosene de Aviação (QAV)</span><span>~10%</span>
+      </div>
+      <div class="progress bg-black border border-secondary" style="height: 18px;">
+        <div class="progress-bar bg-success fw-bold" style="width: 10%;">10%</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="d-flex justify-content-between small mb-1">
+        <span>GLP, Nafta Petroquímica, Lubrificantes e Asfalto</span><span>~20%</span>
+      </div>
+      <div class="progress bg-black border border-secondary" style="height: 18px;">
+        <div class="progress-bar bg-secondary fw-bold" style="width: 20%;">20%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       8. PERGUNTAS FREQUENTES (ACCORDION DARK)
+       ===================================================================== -->
+  <section id="faqPetro" class="container pb-5">
+    <h3 class="fw-bold mb-3">Perguntas Frequentes Sobre Petróleo</h3>
+    <div class="accordion" id="accordionPetro">
+      <div class="accordion-item bg-black text-light border-secondary">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#p1">
+            1. O que é o Pré-Sal?
+          </button>
+        </h2>
+        <div id="p1" class="accordion-collapse collapse show" data-bs-parent="#accordionPetro">
+          <div class="accordion-body text-secondary">
+            É uma província petrolífera localizada em águas profundas e ultraprofundas abaixo de uma espessa camada de sal no subsolo marinho, conhecida por abrigar grandes reservas de óleo leve de alta qualidade.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-black text-light border-secondary">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#p2">
+            2. Por que misturar etanol na gasolina e biodiesel no diesel?
+          </button>
+        </h2>
+        <div id="p2" class="accordion-collapse collapse" data-bs-parent="#accordionPetro">
+          <div class="accordion-body text-secondary">
+            A mistura de biocombustíveis renováveis aumenta a octanagem (no caso do etanol anidro na gasolina), melhora a lubricidade (no caso do biodiesel) e reduz as emissões líquidas de gases de efeito estufa.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       9. CAPTURA DE LEAD / DOSSIÊ SETORIAL
+       ===================================================================== -->
+  <section id="estudo" class="container pb-5">
+    <div class="card bg-black text-light border-warning rounded-4 p-4 p-md-5 shadow-lg">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="badge text-bg-warning text-dark mb-2">MATERIAL DIDÁTICO</span>
+          <h2 class="fw-bold text-warning">Receba o Guia Ilustrado de Refino e Energia</h2>
+          <p class="text-secondary mb-0">
+            Cadastre-se para simular o recebimento do infográfico completo da torre de destilação e tabelas técnicas de derivados.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <form id="formPetro" class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control form-control-lg" placeholder="Seu Nome" required />
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control form-control-lg" placeholder="Seu E-mail" required />
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-warning btn-lg text-dark fw-bold w-100">
+                Receber Material Completo
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       10. MODAL: CONVERSOR DE BARRIS PARA LITROS E GALÕES
+       ===================================================================== -->
+  <div class="modal fade" id="modalBarril" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-warning">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title text-warning"><i class="bi bi-droplet-half me-2"></i>Conversor de Barris (bbl)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-secondary">1 barril padrão de petróleo (bbl) corresponde a aproximadamente <strong>158,987 litros</strong> ou <strong>42 galões americanos</strong>.</p>
+          <label class="form-label">Quantidade de Barris (bbl)</label>
+          <input type="number" step="0.1" id="barrisInput" class="form-control mb-3" placeholder="Ex: 10" />
+          <button type="button" class="btn btn-warning text-dark fw-bold w-100" onclick="converterBarris()">
+            Converter Agora
+          </button>
+          <div id="resBarris" class="d-none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de Confirmação -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toastPetro" class="toast text-bg-warning text-dark border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body fw-semibold">
+          <i class="bi bi-check-circle-fill me-2"></i>Material sobre Petróleo & Refino enviado com sucesso!
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       11. RODAPÉ COM PAGINAÇÃO ENTRE AS PÁGINAS
+       ===================================================================== -->
+  <footer class="bg-black border-top border-secondary py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <span class="small text-secondary">© 2026 PetroEnergy — Landing Page Explicativa Sobre Petróleo (Bootstrap 5)</span>
+      <nav aria-label="Navegação entre páginas">
+        <ul class="pagination pagination-sm mb-0">
+          <li class="page-item"><a class="page-link bg-dark text-light border-secondary" href="index.html">← 1. Tudo Sobre Carros</a></li>
+          <li class="page-item active"><a class="page-link bg-warning text-dark border-warning fw-bold" href="petroleo.html">2. Tudo Sobre Petróleo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle + Script Personalizado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
